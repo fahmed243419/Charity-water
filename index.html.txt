@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta & Title -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Join Charity:Water in bringing clean and safe drinking water to communities around the world." />
+    <title>Charity: Water</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <style>
+        :root {
+            --primary-yellow: #FFC907;
+            --primary-blue: #2E9DF7;
+            --secondary-light-blue: #8BD1CB;
+            --secondary-green: #4FCB53;
+            --secondary-orange: #FF902A;
+            --secondary-red: #F5402C;
+            --secondary-dark-green: #159A48;
+            --secondary-pink: #F16061;
+            --text-light: #FFFFFF;
+            --primary-dark: #0B1F44;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-yellow);
+            color: var(--primary-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .donate-btn {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .donate-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 2rem;
+            gap: 2rem;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-input {
+            display: flex;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .cta-input input {
+            flex: 1;
+            padding: 0.7rem 1rem;
+            border-radius: 8px 0 0 8px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .cta-input button {
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            border: none;
+            padding: 0 1rem;
+            font-size: 1rem;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-input button:hover {
+            transform: scale(1.05);
+        }
+
+        .donation-feed {
+            margin-top: 1rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            max-width: 300px;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .donation-feed div {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .donation-feed div:last-child {
+            border-bottom: none;
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .hero img:hover {
+            transform: scale(1.03);
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+
+            .hero-content {
+                text-align: left;
+            }
+
+            .hero-content h2 {
+                font-size: 3rem;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--primary-dark);
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display:flex; align-items:center; gap:0.5rem;">
+            <img src="img/a58a4642-b97c-4391-ba5d-3dc3ec466820.png" alt="Charity:Water logo" />
+            <h1>Charity: Water</h1>
+        </div>
+        <button class="donate-btn" aria-label="Donate Now">DONATE NOW</button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Change Lives with Just a Small Gift</h2>
+            <p>100% of your donation funds clean water projects, creating lasting impact for communities in need.</p>
+            
+            <div class="cta-input">
+                <input type="text" aria-label="Enter your message" placeholder="Every penny counts. Families need clean water." />
+                <button type="button">Spread the Word</button>
+            </div>
+
+            <div class="donation-feed" aria-label="Recent donations">
+                <div><span>Student 74</span><span>$23</span></div>
+                <div><span>Student 5</span><span>$5</span></div>
+                <div><span>Student 25</span><span>$12</span></div>
+            </div>
+        </div>
+
+        <img src="img/a58a4642-b97c-4391-ba5d-3dc3ec466820.png" alt="Child smiling at a clean water pump" />
+    </section>
+
+    <footer>
+        © 2025 Charity: Water — Clean water changes everything.
+    </footer>
+</body>
+</html>
